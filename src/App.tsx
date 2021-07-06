@@ -11,10 +11,10 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route exact path="/" component={CategoryCard} />
-          <Route exact path="/game/:category" render={({match})=> <MainPlayField category={match.params.category}/>}  />
-          <Route exact path="/gameover/:success" render={({match}) => <SuccessPage result={match.params.success} />} />
-          <Route exact path="/statistic" component={Statistic} />
+          <Route exact path="/english-4-kids/" component={CategoryCard} />
+          <Route exact path="/english-4-kids/game/:category" render={({match})=> <MainPlayField category={match.params.category}/>}  />
+          <Route exact path="/english-4-kids/gameover/:success" render={({match}) => <SuccessPage result={match.params.success} />} />
+          <Route exact path="/english-4-kids/statistic" component={Statistic} />
         </Switch>
       </div>
     </BrowserRouter>

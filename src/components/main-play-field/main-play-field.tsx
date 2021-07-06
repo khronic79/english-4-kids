@@ -10,7 +10,7 @@ import { mixArray } from '../../shared/mix-array';
 import { playAudio } from '../../shared/play-audio';
 import { Redirect } from 'react-router-dom';
 
-export function MainPlayField({category}: any) {
+export function MainPlayField({category}: {category: string}) {
 
   const { appMode } = useContext(AppModeContext);
 
@@ -29,6 +29,7 @@ export function MainPlayField({category}: any) {
       setIsGameStarted(0);
     }
     setcurrentWord([]);
+    setIndex(0);
   }, [appMode, category]);
 
   useEffect(() => {
@@ -46,7 +47,6 @@ export function MainPlayField({category}: any) {
       })();
       }
     } else {
-      console.log('What happend: ', currentWord);
       let check = currentWord.every((elem) => {
         if (elem) return true 
         else return false;
@@ -62,12 +62,13 @@ export function MainPlayField({category}: any) {
   }, [currentWord]);
 
   const cardsArr = (cards.slice(1)) as unknown as CardData[][];
-  const cardsData = cardsArr[category];
+  const cardsData = cardsArr[+category];
+
   useEffect(() => {
-    let cardsDataMix = mixArray(cardsData);
+    const cardsDataMix = mixArray(cardsData);
     mixWords(cardsDataMix);
-  }, [category]);
-  
+  }, [category, appMode]);
+
   const cardsComponentArr = cardsData.map((card, i) => {
     return (
       <Card 
@@ -91,13 +92,14 @@ export function MainPlayField({category}: any) {
         {cardsComponentArr}
       </div>
       <StartRepeatButton 
+        appMode={appMode}
         isGameStarted={isGameStarted} 
         startGame={setIsGameStarted} 
         currentWord={currentWord} 
         cardsDataMix={mixedWords}
         index={index}
       />
-      { isGameStarted === 2 ? <Redirect to={"/gameover/" + gameResult} />: '' }
+      { isGameStarted === 2 ? <Redirect to={"/english-4-kids/gameover/" + gameResult} />: '' }
     </main>
   );
 }

@@ -1,10 +1,10 @@
-import { Dispatch, SetStateAction, useContext } from 'react';
-import AppModeContext from '../../context';
+import { Dispatch, SetStateAction } from 'react';
 import { CardData } from '../../interfaces';
 import { playAudio } from '../../shared/play-audio';
 import './start-repeat-button.css';
 
 interface  StartGameFunction{
+  appMode: boolean
   isGameStarted: number;
   startGame: Dispatch<SetStateAction<number>>;
   currentWord: boolean[];
@@ -12,8 +12,7 @@ interface  StartGameFunction{
   index: number;
 }
 
-export const StartRepeatButton = ({isGameStarted, startGame, currentWord, cardsDataMix, index}: StartGameFunction): JSX.Element => {
-  const { appMode } = useContext(AppModeContext);
+export const StartRepeatButton = ({appMode, isGameStarted, startGame, currentWord, cardsDataMix, index}: StartGameFunction): JSX.Element => {
 
   const startHandler = () => {
     if (isGameStarted === 0) {

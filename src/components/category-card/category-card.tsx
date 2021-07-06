@@ -12,7 +12,7 @@ export function CategoryCard() {
   const categoriesArr = cards[0] as string[];
   const categories = categoriesArr.map((category, i) => {
     return (
-      <NavLink key={i} to={'/game/'+i} className="category-link">
+      <NavLink key={i} to={'/english-4-kids/game/'+i} className="category-link">
         <div className="category">
           <div className="categoty-img-wrapper">
             <img src={"/english-4-kids/" + cardsArr[i][0].image} alt={category} />

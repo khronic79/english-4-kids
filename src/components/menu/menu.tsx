@@ -11,9 +11,9 @@ function Menu() {
 
   return (
     <ul className="nav">
-      <li className="nav-item"><NavLink to="/">Main page</NavLink></li>
+      <li className="nav-item"><NavLink to="/english-4-kids/">Main page</NavLink></li>
       {links}
-      <li className="nav-item stat"><NavLink to="/statistic">Statistic</NavLink></li>
+      <li className="nav-item stat"><NavLink to="/english-4-kids/statistic">Statistic</NavLink></li>
     </ul>
   );
 }

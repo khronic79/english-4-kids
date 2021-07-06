@@ -1,4 +1,4 @@
-import { Dispatch, useContext, useState } from 'react';
+import { Dispatch, useContext, useEffect, useState } from 'react';
 import AppModeContext from '../../context';
 import { CardData } from '../../interfaces';
 import { playAudio } from '../../shared/play-audio';
@@ -30,6 +30,10 @@ export function Card({card, isGameStarted, cardsDataMix, currentWord, setcurrent
   const [clickedStyle, setClickStyle] = useState('not-clicked');
 
   let cardStyle = "card-container";
+
+  useEffect(() => {
+    setClickStyle('not-clicked');
+  }, [appMode, category]);
 
   const setStyles = () => {
     if (isFlipped) {
@@ -72,7 +76,6 @@ export function Card({card, isGameStarted, cardsDataMix, currentWord, setcurrent
   const addDataToLocalStorage = (category: string, word: string, param: string) => {
     if (localStorage.getItem(category)) { 
       let data = (JSON.parse(localStorage.getItem(category) as string)) as LoccalStorageData;
-      console.log(data);
       if (data[word]){
         data[word][param] += 1;
         localStorage.setItem(category, JSON.stringify(data));
@@ -93,7 +96,6 @@ export function Card({card, isGameStarted, cardsDataMix, currentWord, setcurrent
           "success": 0,
         }
       };
-      console.log(data);
       data[word][param] += 1;
       localStorage.setItem(category, JSON.stringify(data));
     }

@@ -17,7 +17,7 @@ export function SuccessPage ({result}: {result: string}) {
   return (
     <div>
       <img src={"/english-4-kids/img/" + result + '.jpg'} alt={result} />
-      { isForward ? <Redirect to="/" /> : '' }
+      { isForward ? <Redirect to="/english-4-kids/" /> : '' }
     </div>
   );
 }

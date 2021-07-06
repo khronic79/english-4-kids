@@ -66,7 +66,8 @@ export function Statistic() {
           train = (data[words[i][j].word]['train']).toString();
           success = (data[words[i][j].word]['success']).toString();
           error = (data[words[i][j].word]['error']).toString();
-          percent = (+success + +error / +error).toString();
+          percent = (((+success) / ((+success) + (+error))) * 100).toString();
+          percent = percent !== 'NaN'? percent: "no data";
         } else {
           train = '0';
           success = '0';

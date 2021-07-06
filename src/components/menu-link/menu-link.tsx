@@ -4,6 +4,6 @@ import cards from '../../cards';
 export function MenuLink({category}: any) {
   
   return (
-    <li className="nav-item"><NavLink to={'/game/'+category}>{cards[0][category]}</NavLink></li>  
+    <li className="nav-item"><NavLink to={'/english-4-kids/game/'+category}>{cards[0][category]}</NavLink></li>  
   );
 }
