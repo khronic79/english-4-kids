@@ -1,0 +1,15 @@
+.game-section {
+  width: 100%;
+}
+.cards-game-container {
+  width: 100%;
+  height: 60vh;
+  display: grid;
+  align-items: start;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.place-for-stars {
+  height: 80px;
+}

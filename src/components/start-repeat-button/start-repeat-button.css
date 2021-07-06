@@ -1,0 +1,45 @@
+.button-visibility {
+  display: none;
+}
+.start-repeat-button {
+  width: 92px;
+  height: 92px;
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  background-color: #00BF9A;
+  border-radius: 50%;
+}
+.start-button {
+  height: 100%;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.repeat-button {
+  display: none;
+  height: 100%;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: url(../../assets/repeat.svg) no-repeat center;
+  background-size: 80%;
+}
+.start-repeat-button.game .repeat-button {
+  display: block;
+}
+.start-repeat-button.game .start-button {
+  display: none;
+}

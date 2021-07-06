@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./src/assets/fonts/roboto-v27-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./src/assets/fonts/roboto-v27-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./src/assets/fonts/roboto-v27-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./src/assets/fonts/roboto-v27-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('./src/assets/fonts/roboto-v27-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./src/assets/fonts/roboto-v27-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.header {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+
+}
+.menu-button {
+  position: relative;
+  width: 60px;
+  height: 45px;
+  z-index: 20;
+  cursor: pointer;
+}
+.menu-button div {
+  position: absolute;
+  background-color: #4fbe79;
+  height: 5px;
+  width: 100%;
+  transition: 0.5s ease;
+}
+.cross1 {
+  top: 0;
+}
+.cross2 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cross3 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cross4 {
+  bottom: 0;
+}
+.menu.open .menu-button div {
+  background-color: #e53935;
+}
+.menu.open .cross1  {
+  height: 0px;
+}
+.menu.open .cross2 {
+  transform: rotate(-45deg);
+}
+.menu.open .cross3 {
+  transform: rotate(45deg);
+}
+.menu.open .cross4 {
+  height: 0px;
+}
+
+.nav {
+  height: 100vh;
+  box-sizing: border-box;
+  position: absolute;
+  left: -380px;
+  top: 0;
+  width: 320px;
+  background: linear-gradient(180deg, #0099AE 0%, #00BF82 100%);
+  list-style: none;
+  padding-top: 100px;
+  padding-left: 60px;
+  transition: 0.5s ease;
+  z-index: 15;
+}
+.nav-item {
+  height: 55px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.menu.open .nav {
+  left: 0;
+}
+
+.cards-container {
+  width: 100%;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.main-section {
+  width: 100%;
+}
+.categoty-img-wrapper {
+  position: relative;
+}
+.categoty-img-wrapper img {
+  display: block;  
+  width: 100%;
+}
+.category {
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.category-name {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: 0.8;
+  border-style: solid;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #e53935;
+  border-top-width: 10px;
+}
+.category-name span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.game-mode {
+  position: relative;
+  height: 45px;
+  width: 100px;
+  background-color: #4fbe79;
+  border-radius: 100px;
+  transition: 0.5s ease;
+}
+.checkbox {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 100px;
+  cursor: pointer;
+  z-index: 5;
+}
+.mode-controller {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 57px;
+  height: 41px;
+  width: 41px;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.5s ease;
+}
+.play-mode-title {
+  visibility: hidden;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: white;
+  transition: 0.2s ease;
+}
+.train-mode-title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: white;
+  transition: 0.2s ease;
+}
+.game-mode.play {
+  background-color: #e53935;
+}
+.game-mode.play .mode-controller {
+  left: 57px;
+  right: 2px;
+}
+.game-mode.play .play-mode-title{
+  visibility: visible;
+}
+.game-mode.play .train-mode-title{
+  visibility: hidden;
+}
+
+
+.card-img-wrapper {
+  position: relative;
+}
+.card-img-wrapper img {
+  display: block;  
+  width: 100%;
+}
+.card-name {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: 0.8;
+  border-style: solid;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #e53935;
+  border-top-width: 10px;
+}
+.card-name span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+}
+.rotate-controller {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 30px;
+  background-color: white;
+}
+.rotate-controller span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+.card-container {
+  perspective: 600px;
+  cursor: pointer;
+}
+.card-container.flipped .card{
+  transform: rotateY(180deg);
+  transform-origin: center;
+}
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+  transform-origin: center;
+}
+.card-front, .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  backface-visibility: hidden;
+}
+.card-back {
+  transform: rotateY(180deg); 
+}
+.card-container.play .card-name{
+  display: none;
+}
+
+.card-container.play .rotate-controller {
+  display: none;
+}
+
+.black-layer {
+  display: none;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
+}
+.black-layer-active {
+  display: block;
+}

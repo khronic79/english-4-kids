@@ -1,0 +1,32 @@
+table{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  border-collapse:collapse;
+  margin-bottom: 50px;
+}
+th {
+  padding-left: 2em;
+  padding-right: 2em;
+  cursor: pointer;
+  background-color: #4fbe79;
+  border-style: solid;
+  border-width: 1px;
+}
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+th.ascending::after {
+  content: '👇';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+th.descending::after {
+  content: '☝️';
+  display: inline-block;
+  margin-left: 1em;
+}

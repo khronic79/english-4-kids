@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppModeContext from './context';
+
+function Main() {
+  const [appMode, setAppMode] = useState(false);
+
+  return (
+    <React.StrictMode>
+      <AppModeContext.Provider value={{appMode, setAppMode}}>
+        <App />
+      </AppModeContext.Provider>
+    </React.StrictMode>
+  );
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Main />,
   document.getElementById('root')
 );
 

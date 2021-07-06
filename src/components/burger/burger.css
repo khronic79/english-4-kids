@@ -1,0 +1,43 @@
+.menu-button {
+    position: relative;
+    width: 60px;
+    height: 45px;
+    z-index: 20;
+    cursor: pointer;
+  }
+  .menu-button div {
+    position: absolute;
+    background-color: #4fbe79;
+    height: 5px;
+    width: 100%;
+    transition: 0.5s ease;
+  }
+  .cross1 {
+    top: 0;
+  }
+  .cross2 {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .cross3 {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .cross4 {
+    bottom: 0;
+  }
+  .menu.open .menu-button div {
+    background-color: #e53935;
+  }
+  .menu.open .cross1  {
+    height: 0px;
+  }
+  .menu.open .cross2 {
+    transform: rotate(-45deg);
+  }
+  .menu.open .cross3 {
+    transform: rotate(45deg);
+  }
+  .menu.open .cross4 {
+    height: 0px;
+  }

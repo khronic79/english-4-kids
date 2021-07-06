@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/header/header';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { CategoryCard } from './components/category-card/category-card';
+import { MainPlayField } from './components/main-play-field/main-play-field';
+import { SuccessPage } from './components/success-page/success-page';
+import { Statistic } from './components/statistic/statistic';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact path="/" component={CategoryCard} />
+          <Route exact path="/game/:category" render={({match})=> <MainPlayField category={match.params.category}/>}  />
+          <Route exact path="/gameover/:success" render={({match}) => <SuccessPage result={match.params.success} />} />
+          <Route exact path="/statistic" component={Statistic} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

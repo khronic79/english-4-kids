@@ -1,0 +1,71 @@
+.game-mode {
+  position: relative;
+  height: 45px;
+  width: 100px;
+  background-color: #4fbe79;
+  border-radius: 100px;
+  transition: 0.5s ease;
+}
+.checkbox {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 100px;
+  cursor: pointer;
+  z-index: 5;
+}
+.mode-controller {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 57px;
+  height: 41px;
+  width: 41px;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.5s ease;
+}
+.play-mode-title {
+  visibility: hidden;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: white;
+  transition: 0.2s ease;
+}
+.train-mode-title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: white;
+  transition: 0.2s ease;
+}
+.game-mode.play {
+  background-color: #e53935;
+}
+.game-mode.play .mode-controller {
+  left: 57px;
+  right: 2px;
+}
+.game-mode.play .play-mode-title{
+  visibility: visible;
+}
+.game-mode.play .train-mode-title{
+  visibility: hidden;
+}
