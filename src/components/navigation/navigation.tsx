@@ -17,7 +17,7 @@ function Navigation() {
   return (
     <nav className={cName}>
       <Burger cb={openCloseNavigation} />
-      <BlackLayer />
+      <BlackLayer cb={openCloseNavigation} />
       <Menu cb={openCloseNavigation}/>
     </nav>
   );
