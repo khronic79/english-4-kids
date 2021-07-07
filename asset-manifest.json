@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/english-4-kids/static/css/main.759b5dbc.chunk.css",
-    "main.js": "/english-4-kids/static/js/main.4d0d5a48.chunk.js",
-    "main.js.map": "/english-4-kids/static/js/main.4d0d5a48.chunk.js.map",
+    "main.css": "/english-4-kids/static/css/main.ae3326ef.chunk.css",
+    "main.js": "/english-4-kids/static/js/main.4ec43770.chunk.js",
+    "main.js.map": "/english-4-kids/static/js/main.4ec43770.chunk.js.map",
     "runtime-main.js": "/english-4-kids/static/js/runtime-main.5fcc7aa3.js",
     "runtime-main.js.map": "/english-4-kids/static/js/runtime-main.5fcc7aa3.js.map",
     "static/js/2.b09bd70e.chunk.js": "/english-4-kids/static/js/2.b09bd70e.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.8642e6d4.chunk.js": "/english-4-kids/static/js/3.8642e6d4.chunk.js",
     "static/js/3.8642e6d4.chunk.js.map": "/english-4-kids/static/js/3.8642e6d4.chunk.js.map",
     "index.html": "/english-4-kids/index.html",
-    "static/css/main.759b5dbc.chunk.css.map": "/english-4-kids/static/css/main.759b5dbc.chunk.css.map",
+    "static/css/main.ae3326ef.chunk.css.map": "/english-4-kids/static/css/main.ae3326ef.chunk.css.map",
     "static/js/2.b09bd70e.chunk.js.LICENSE.txt": "/english-4-kids/static/js/2.b09bd70e.chunk.js.LICENSE.txt",
     "static/media/start-repeat-button.css": "/english-4-kids/static/media/repeat.847af73c.svg",
     "static/media/index.css": "/english-4-kids/static/media/roboto-v27-latin_cyrillic-regular.e909875f.ttf",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.5fcc7aa3.js",
     "static/js/2.b09bd70e.chunk.js",
-    "static/css/main.759b5dbc.chunk.css",
-    "static/js/main.4d0d5a48.chunk.js"
+    "static/css/main.ae3326ef.chunk.css",
+    "static/js/main.4ec43770.chunk.js"
   ]
 }
