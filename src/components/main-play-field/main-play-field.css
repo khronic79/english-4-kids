@@ -3,11 +3,10 @@
 }
 .cards-game-container {
   width: 100%;
-  height: 60vh;
   display: grid;
   align-items: start;
   gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: 1fr 1fr;
 }
 .place-for-stars {
