@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/english-4-kids/static/css/main.519a6ec6.chunk.css",
-    "main.js": "/english-4-kids/static/js/main.96848db7.chunk.js",
-    "main.js.map": "/english-4-kids/static/js/main.96848db7.chunk.js.map",
-    "runtime-main.js": "/english-4-kids/static/js/runtime-main.fa76d119.js",
-    "runtime-main.js.map": "/english-4-kids/static/js/runtime-main.fa76d119.js.map",
-    "static/js/2.b5b3e129.chunk.js": "/english-4-kids/static/js/2.b5b3e129.chunk.js",
-    "static/js/2.b5b3e129.chunk.js.map": "/english-4-kids/static/js/2.b5b3e129.chunk.js.map",
-    "static/js/3.041f29ef.chunk.js": "/english-4-kids/static/js/3.041f29ef.chunk.js",
-    "static/js/3.041f29ef.chunk.js.map": "/english-4-kids/static/js/3.041f29ef.chunk.js.map",
+    "main.css": "/english-4-kids/static/css/main.759b5dbc.chunk.css",
+    "main.js": "/english-4-kids/static/js/main.4d0d5a48.chunk.js",
+    "main.js.map": "/english-4-kids/static/js/main.4d0d5a48.chunk.js.map",
+    "runtime-main.js": "/english-4-kids/static/js/runtime-main.5fcc7aa3.js",
+    "runtime-main.js.map": "/english-4-kids/static/js/runtime-main.5fcc7aa3.js.map",
+    "static/js/2.b09bd70e.chunk.js": "/english-4-kids/static/js/2.b09bd70e.chunk.js",
+    "static/js/2.b09bd70e.chunk.js.map": "/english-4-kids/static/js/2.b09bd70e.chunk.js.map",
+    "static/js/3.8642e6d4.chunk.js": "/english-4-kids/static/js/3.8642e6d4.chunk.js",
+    "static/js/3.8642e6d4.chunk.js.map": "/english-4-kids/static/js/3.8642e6d4.chunk.js.map",
     "index.html": "/english-4-kids/index.html",
-    "static/css/main.519a6ec6.chunk.css.map": "/english-4-kids/static/css/main.519a6ec6.chunk.css.map",
-    "static/js/2.b5b3e129.chunk.js.LICENSE.txt": "/english-4-kids/static/js/2.b5b3e129.chunk.js.LICENSE.txt",
+    "static/css/main.759b5dbc.chunk.css.map": "/english-4-kids/static/css/main.759b5dbc.chunk.css.map",
+    "static/js/2.b09bd70e.chunk.js.LICENSE.txt": "/english-4-kids/static/js/2.b09bd70e.chunk.js.LICENSE.txt",
     "static/media/start-repeat-button.css": "/english-4-kids/static/media/repeat.847af73c.svg",
     "static/media/index.css": "/english-4-kids/static/media/roboto-v27-latin_cyrillic-regular.e909875f.ttf",
     "static/media/card.css": "/english-4-kids/static/media/rotate.8564a665.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fa76d119.js",
-    "static/js/2.b5b3e129.chunk.js",
-    "static/css/main.519a6ec6.chunk.css",
-    "static/js/main.96848db7.chunk.js"
+    "static/js/runtime-main.5fcc7aa3.js",
+    "static/js/2.b09bd70e.chunk.js",
+    "static/css/main.759b5dbc.chunk.css",
+    "static/js/main.4d0d5a48.chunk.js"
   ]
 }
